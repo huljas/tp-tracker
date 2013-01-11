@@ -1,0 +1,17 @@
+@(mainTypes:List[ItemType], tradeItems:List[TradeItem], weapons:List[TradeItem])
+
+@main("TP Tracker") {
+
+<h1>Test</h1>
+
+<p>Main types: @mainTypes.length</p>
+
+<p>Trade items: @tradeItems.length</p>
+
+<h2>Weapons:</h2>
+
+@for(item <- weapons) {
+<p>@item</p>
+}
+
+}
